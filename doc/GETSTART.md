@@ -4,10 +4,17 @@
 
 Lerna 是一个优化使用 git 和 npm 管理多包存储库的工作流程的工具。
 
-|  名称     | 概念                  | 存在问题                                                                                                                                | 使用案例                                                                                                                       |
-| --------- | --------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| multirepo | 每个 npm 包一个仓库   | issue 管理混乱,changeLog 难于整合 core-module 更新麻烦                                                                                  | [roolup](https://github.com/rollup)                                                                                            |
-| monorepo  | 单代码仓库多个 npm 包 | 使用同一个代码仓库，每个 module 单独发布，但是每次更新后，使用同一个版本号, repo 体积可能会比较大，项目模块多，构建工具需要支持全部模块 | [babel](https://github.com/babel/babel/tree/master/packages) , [React](https://github.com/facebook/react/tree/master/packages) |
+<br/>
+## 术语了解 multirepo 、momorepo
+
+|  名称     | 概念                  | 存在问题                                                                                                                                           | 使用案例                                                                                                                       |
+| --------- | --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| multirepo | 每个 npm 包一个仓库   | issue 管理混乱,changeLog 难于整合 core-module 更新麻烦                                                                                             | [roolup](https://github.com/rollup)                                                                                            |
+| monorepo  | 单代码仓库多个 npm 包 | 使用同一个代码仓库，每个 module 单独发布，<br/> 但是每次更新后，使用同一个版本号, repo 体积可能会比较大，<br/>项目模块多，构建工具需要支持全部模块 | [babel](https://github.com/babel/babel/tree/master/packages) , [React](https://github.com/facebook/react/tree/master/packages) |
+
+lerna 是 momorepo 的方式管理包。
+
+<br/>
 
 ## 快速开始
 
@@ -37,6 +44,7 @@ npm init -y
 
 <img src="https://i.loli.net/2018/11/07/5be22816f157d.png" width="200px"/>
 
+<br/>
 ## lerna 常用命令
 
  目前就用到了三个命令`lerna add` , `lerna bootstrap` , `lerna publish`
@@ -59,6 +67,7 @@ lerna add hoho-lerna-core --scope=hoho-lerna-module-a
 # 此时 module-a 的 package.json 和 node_module 应该会多出了 hoho-lerna-core
 ```
 
+<br/>
 ### 2. lerna bootstrap
 
 这个命令会自动处理 repo 下，模块的包依赖，然后把依赖包做软链接到模块中的 `node_module`。
@@ -75,6 +84,7 @@ lerna add hoho-lerna-core --scope=hoho-lerna-module-a
 }
 ```
 
+<br/>
 ### 3. lerna publish
 
 把 `packages`下的包分为上传到 npm 仓库去。
@@ -108,10 +118,12 @@ lerna ERR! ENEEDAUTH You must be logged in to publish packages. Use `npm login` 
 ![](https://i.loli.net/2018/11/07/5be22dbe24722.png)
 ![](https://i.loli.net/2018/11/07/5be22dd34799b.png)
 ![](https://i.loli.net/2018/11/07/5be22e614cc0b.png)
+<br/>
 
 ## Change Log 如何生成？
 
 [《集成 ChangeLog 功能》](CHANGELOG.md)
+<br/>
 
 ## 学习文章链接
 
