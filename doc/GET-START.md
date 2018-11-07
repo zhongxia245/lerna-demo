@@ -84,9 +84,8 @@ lerna add hoho-lerna-core --scope=hoho-lerna-module-a
 # 输入帐号，密码，邮箱 （没有的话，去 npmjs 注册一下）
 npm login
 
-# 提交代码
-git commit -a 'lerna init'
-git push
+# 创建 git commit
+git commit -a 'add README.md'
 
 # publish 包
 lerna publish
@@ -98,3 +97,7 @@ lerna publish
 2. 自动更新依赖包的版本
 3. 把各个包发布到 npm
 4. 把 tag 和相对应的 commit 给 push 到仓库
+
+![](https://i.loli.net/2018/11/07/5be22dbe24722.png)
+![](https://i.loli.net/2018/11/07/5be22dd34799b.png)
+![](https://i.loli.net/2018/11/07/5be22e614cc0b.png)
