@@ -89,6 +89,13 @@ git commit -a 'add README.md'
 
 # publish 包
 lerna publish
+
+# 如果 npm 未登录，则会提示
+╰─➤  lerna publish
+lerna notice cli v3.4.3
+lerna info Verifying npm credentials
+lerna http fetch GET 200 https://registry.npm.taobao.org/-/whoami 238ms
+lerna ERR! ENEEDAUTH You must be logged in to publish packages. Use `npm login` and try again.
 ```
 
 `lerna publish` 的大致流程？
@@ -101,3 +108,11 @@ lerna publish
 ![](https://i.loli.net/2018/11/07/5be22dbe24722.png)
 ![](https://i.loli.net/2018/11/07/5be22dd34799b.png)
 ![](https://i.loli.net/2018/11/07/5be22e614cc0b.png)
+
+## Change Log 如何生成？
+
+[《集成 ChangeLog 功能》](CHANGELOG.md)
+
+## 学习文章链接
+
+1. [《lerna 入门指南》](http://www.ayqy.net/blog/lerna%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/)
