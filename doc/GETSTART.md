@@ -5,9 +5,10 @@
 Lerna 是一个优化使用 git 和 npm 管理多包存储库的工作流程的工具。
 
 <br/>
+
 ## 术语了解 multirepo 、momorepo
 
-|  名称     | 概念                  | 存在问题                                                                                                                                           | 使用案例                                                                                                                       |
+| 名称     | 概念                  | 存在问题                                                                                                                                           | 使用案例                                                                                                                       |
 | --------- | --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
 | multirepo | 每个 npm 包一个仓库   | issue 管理混乱,changeLog 难于整合 core-module 更新麻烦                                                                                             | [roolup](https://github.com/rollup)                                                                                            |
 | monorepo  | 单代码仓库多个 npm 包 | 使用同一个代码仓库，每个 module 单独发布，<br/> 但是每次更新后，使用同一个版本号, repo 体积可能会比较大，<br/>项目模块多，构建工具需要支持全部模块 | [babel](https://github.com/babel/babel/tree/master/packages) , [React](https://github.com/facebook/react/tree/master/packages) |
@@ -47,7 +48,7 @@ npm init -y
 <br/>
 ## lerna 常用命令
 
- 目前就用到了三个命令`lerna add` , `lerna bootstrap` , `lerna publish`
+目前就用到了三个命令`lerna add` , `lerna bootstrap` , `lerna publish`
 
 ### 1. lerna add
 
