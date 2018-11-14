@@ -61,12 +61,31 @@ git checkout -b feature/changlog
 git commit -am 'feature: add changelog , fixed #9'
 
 git push
-
 ```
 
-![](https://i.loli.net/2018/11/14/5bebebf3626d4.png)
+![](https://i.loli.net/2018/11/14/5bebec88a10ff.png)
 
-创建 mr 的时候需要
+> 注意： `Labels` 必须选 `lerna.json` 中 `labels`配置的值,否则无法生成日志。表现就是，运行 `lerna-changelog` 没有返回内容。
+
+PR 合并到 master 后， 本地切换分支到 master 。 
+```bash
+#执行 lerna-changelog
+node_modules/.bin/lerna-changelog
+
+# 顺便在 .gitignore 忽略 .changelog 文件夹
+# .gitignore
++ .changelog
+
+# 发布 npm 包
+lerna publish
+```
+
+
+
+
+
+
+
 
 ## 参考文章
 
