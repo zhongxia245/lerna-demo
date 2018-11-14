@@ -1,6 +1,6 @@
 {
   "name": "hoho-lerna-module-a",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "hoho-lerna-core": "^0.0.5"
+    "hoho-lerna-core": "^0.0.6"
   }
 }
