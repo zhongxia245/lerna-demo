@@ -57,8 +57,16 @@ git checkout -b feature/changlog
 
 ## 修改一些东西
 
+# 提交分支,然后创建一个 PR ， merge 到 master 分支
+git commit -am 'feature: add changelog , fixed #9'
+
+git push
 
 ```
+
+![](https://i.loli.net/2018/11/14/5bebebf3626d4.png)
+
+创建 mr 的时候需要
 
 ## 参考文章
 
