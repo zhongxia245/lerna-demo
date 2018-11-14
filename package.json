@@ -1,10 +1,14 @@
 {
-  "name": "root",
+  "name": "lerna-demo",
+  "author": "zhongxia245",
   "private": true,
   "devDependencies": {
     "lerna": "^3.4.3"
   },
   "dependencies": {
     "lerna-changelog": "^0.8.2"
+  },
+  "scripts": {
+    "log": "lerna-changelog"
   }
 }

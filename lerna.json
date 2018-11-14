@@ -6,11 +6,11 @@
   "changelog": {
     "repo": "zhongxia245/lerna-demo",
     "labels": {
-      "enhancement": ":rocket: Enhancement",
-      "bug": ":bug: Bug Fix",
-      "doc": "Refine Doc",
-      "feat": "New Feature"
-    },
-    "cacheDir": ".changelog"
+      "labels": {
+        "feature": "New Feature",
+        "bug": ":bug Fix"
+      },
+      "cacheDir": ".changelog"
+    }
   }
 }
