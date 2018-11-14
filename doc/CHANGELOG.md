@@ -72,12 +72,23 @@ PR 合并到 master 后， 本地切换分支到 master 。
 #执行 lerna-changelog
 node_modules/.bin/lerna-changelog
 
+## Unreleased (2018-11-14)
+
+#### New Feature
+* [#9](https://github.com/zhongxia245/lerna-demo/pull/9) feature: add changelog , Closes [#6](https://github.com/zhongxia245/lerna-demo/issues/6) ([@zhongxia245](https://github.com/zhongxia245))
+
+#### Committers: 1
+- zhongxia ([@zhongxia245](https://github.com/zhongxia245))
+
 # 顺便在 .gitignore 忽略 .changelog 文件夹
 # .gitignore
 + .changelog
 
 # 发布 npm 包
 lerna publish
+
+## 发布完后，把刚才生成的 changelog 复制到 release-note 里面去。 【不知道能不能自动在创建 release 的 note 去，而不用自己加。。。。】
+
 ```
 
 

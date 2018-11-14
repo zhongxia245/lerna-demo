@@ -1,8 +1,6 @@
 var core = require('../index')
 var expect = require('chai').expect
 
-console.log(core)
-
 describe('hoho-lerna-core test', function() {
   //defer对象测试
   describe('add.js test', function() {
