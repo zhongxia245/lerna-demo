@@ -62,4 +62,5 @@ git checkout -b feature/changlog
 
 ## 参考文章
 
+这个教程很详细，可以看这里。
 [Lerna 教程](https://juejin.im/entry/586f00bc128fe100580a6f78)
