@@ -5,12 +5,10 @@
   "changelog": {
     "repo": "zhongxia245/lerna-demo",
     "labels": {
-      "labels": {
-        "feature": "New Feature",
-        "bug": ":bug Fix"
-      },
-      "cacheDir": ".changelog"
-    }
+      "feature": "New Feature",
+      "bug": ":bug Fix"
+    },
+    "cacheDir": ".changelog"
   },
   "version": "0.0.0"
 }
